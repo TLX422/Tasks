@@ -9,6 +9,7 @@
 ### 1. 学习笔记
 - [GitHub学习笔记](./GitHub学习笔记.md)
 - [README学习笔记](./README学习笔记.md)
+- [问题解决记录](./问题解决记录.md)
 
 ### 2. 练习文档
 - [Markdown练习文档](./Markdown练习文档.md)

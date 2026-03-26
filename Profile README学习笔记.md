@@ -1,7 +1,6 @@
 # GitHub Profile README 学习笔记
 
 ## 一、参考案例
-
 ### 1. 案例 1：abhchand
 - **链接**：https://github.com/abhchand
 - **风格**：极简、干净、专业、信息密度高。

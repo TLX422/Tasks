@@ -19,4 +19,4 @@
 
 ## 🎯 仓库结构
 ### 1. 个人Profile README仓库
-- [GitHub学习笔记](./GitHub学习笔记.md)
+- [README学习笔记](./README学习笔记.md)

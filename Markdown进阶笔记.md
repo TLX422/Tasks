@@ -22,7 +22,7 @@
 
 ---
 
-✅ 任务列表 —— 待办事项一目了然
+## ✅ 任务列表 —— 待办事项一目了然
 
 在 - 后面加上 [ ] 或 [x]。
 
@@ -32,13 +32,13 @@
 - [ ] 分享给朋友
 ```
 
-· 写完笔记
-· 复习一遍
-· 分享给朋友
+-  写完笔记
+-  复习一遍
+-  分享给朋友
 
 ---
 
-💻 代码块 —— 展示代码更漂亮
+## 💻 代码块 —— 展示代码更漂亮
 
 用三个反引号 ``` 包裹，可以指定语言（会高亮）。
 
@@ -54,23 +54,26 @@ print("Hello, Markdown!")
 
 ---
 
-🔗 链接与图片
+## 🔗 链接与图片
 
 **链接**
 
-[文字](网址)
+- [文字](网址)  
+
 例如：[Markdown语法教程](https://blog.csdn.net/2301_77569009/article/details/137957203?ops_request_misc=elastic_search_misc&request_id=8eee0e629f46cc1e215fdfd5f4d6e525&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-137957203-null-null.142^v102^pc_search_result_base7&utm_term=markdown%E8%AF%AD%E6%B3%95&spm=1018.2226.3001.4187) 
 
 **图片**
 
-![替代文字](图片地址)
-例如：![小猫](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg))
+- ![替代文字](图片地址)  
+
+例如：
+- ![小猫](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg)
 
 ---
 
-📝 引用 —— 强调别人的话或摘录
+## 📝 引用 —— 强调别人的话或摘录
 
-用 > 开头。
+- 用 > 开头。
 
 ```markdown
 > 这是引用内容。
@@ -84,9 +87,9 @@ print("Hello, Markdown!")
 
 ---
 
-📚 列表嵌套 —— 结构更清晰
+## 📚 列表嵌套 —— 结构更清晰
 
-缩进两个空格就能嵌套。
+**缩进两个空格就能嵌套。**
 
 ```markdown
 1. 水果
@@ -115,9 +118,9 @@ print("Hello, Markdown!")
 
 ---
 
-🧭 锚点链接 —— 页面内跳转
+## 🧭 锚点链接 —— 页面内跳转
 
-给标题加个 {#id}，就能从别处跳转过来。
+**给标题加个 {#id}，就能从别处跳转过来。**
 
 ```markdown
 ### 我的秘密基地 {#secret}
@@ -127,7 +130,7 @@ print("Hello, Markdown!")
 
 ---
 
-📖 脚注 —— 补充说明
+## 📖 脚注 —— 补充说明
 
 ```markdown
 Markdown[^1] 很好用。
@@ -139,9 +142,9 @@ Markdown[^1] 很好用。
 
 ---
 
-😊 Emoji —— 让文字活泼起来
+## 😊 Emoji —— 让文字活泼起来
 
-直接复制 🎉，或使用简码 :smile: → :smile:
+- 直接复制 🎉，或使用简码 :smile: → :smile:
 
 常用：:heart: :heart:  :rocket: :rocket:  :zap: :zap:
 

@@ -64,10 +64,7 @@ print("Hello, Markdown!")
 图片
 
 ![替代文字](图片地址)
-例如：![小猫]([cat.jpg](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg))
-
-想调整图片大小？用 HTML 更简单：
-< img src="cat.jpg" width="200">
+例如：![小猫](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg))
 
 ---
 

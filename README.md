@@ -13,6 +13,7 @@
 - [Markdown练习文档](./Markdown练习文档.md)
 - [问题解决记录](./问题解决记录.md)
 ### 第二阶段
-
+- [Git学习笔记](./Git学习笔记.md)
+- [Git提交练习笔记（hello.md)](./Git提交练习笔记（hello.md))
 
 

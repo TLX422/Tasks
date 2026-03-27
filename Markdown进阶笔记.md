@@ -67,6 +67,7 @@ print("Hello, Markdown!")
 - ![替代文字](图片地址)  
 
 例如：
+**一只可爱的小猫🐱**
 - ![小猫](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg)
 
 ---

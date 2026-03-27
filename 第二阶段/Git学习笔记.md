@@ -11,8 +11,6 @@
 3. [基本操作流程](#-基本操作流程)
 4. [分支管理简介](#-分支管理简介)
 5. [远程协作](#-远程协作)
-6. [常用命令速查表](#-常用命令速查表)
-7. [遇到问题怎么办](#-遇到问题怎么办)
 
 ---
 
@@ -25,8 +23,6 @@ Git 是一个**分布式版本控制系统**，用于跟踪文件的变化，方
 
 ### 安装 Git
 - Windows：下载 [Git for Windows](https://git-scm.com/download/win)，安装后可使用 **Git Bash**
-- macOS：`brew install git`
-- Linux：`sudo apt install git`
 
 ### 首次配置
 ```bash
@@ -54,7 +50,7 @@ git status
 
 ```bash
 git add <文件名>      # 添加单个文件
-git add .             # 添加所有改动
+git add              # 添加所有改动
 ```
 
 4. 提交到本地仓库
@@ -145,20 +141,19 @@ git push origin 分支名
 
 ---
 
-📋 常用命令速查表
+## 📋 常用命令速查表
 
-操作 命令
-克隆仓库 git clone <url>
-查看状态 git status
-添加文件 git add <file>
-提交 git commit -m "msg"
-推送 git push
-拉取 git pull
-查看历史 git log --oneline
-创建分支 git branch <name>
-切换分支 git checkout <name>
-合并分支 git merge <name>
-查看远程仓库 git remote -v
+ - 克隆仓库 git clone <url>
+ - 查看状态 git status
+ - 添加文件 git add <file>
+ - 提交 git commit -m "msg"
+ - 推送 git push
+ - 拉取 git pull
+ - 查看历史 git log --oneline
+ - 创建分支 git branch <name>
+ - 切换分支 git checkout <name>
+ - 合并分支 git merge <name>
+ - 查看远程仓库 git remote -v
 
 ---
 
@@ -174,28 +169,18 @@ git push origin 分支名
   ```bash
   git reset --hard <commit-id>
   ```
+---
+### 出现冲突怎么办？
 
-出现冲突怎么办？
-
-1. 执行 git pull 时提示冲突
-2. 打开冲突文件，找到 <<<<<<< 标记
-3. 手动保留需要的代码，删除冲突标记
-4. 保存文件，执行：
+- 1. 执行 git pull 时提示冲突
+- 2. 打开冲突文件，找到 <<<<<<< 标记
+- 3. 手动保留需要的代码，删除冲突标记
+- 4. 保存文件，执行：
    ```bash
    git add .
    git commit -m "解决冲突"
    git push
    ```
-
----
-
-🎯 总结
-
-Git 的学习需要多动手实践，从 clone → add → commit → push 开始，逐步掌握分支、合并、冲突解决等高级操作。熟练后可以尝试使用 VS Code 或 GitHub Desktop 等图形化工具提升效率。
-
----
-
-笔记持续更新中… 🚀
 
 ```
 

@@ -56,12 +56,12 @@ print("Hello, Markdown!")
 
 🔗 链接与图片
 
-链接
+**链接**
 
 [文字](网址)
 例如：[Markdown语法教程](https://blog.csdn.net/2301_77569009/article/details/137957203?ops_request_misc=elastic_search_misc&request_id=8eee0e629f46cc1e215fdfd5f4d6e525&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_click~default-2-137957203-null-null.142^v102^pc_search_result_base7&utm_term=markdown%E8%AF%AD%E6%B3%95&spm=1018.2226.3001.4187) 
 
-图片
+**图片**
 
 ![替代文字](图片地址)
 例如：![小猫](https://img95.699pic.com/photo/60013/3202.jpg_wh860.jpg))

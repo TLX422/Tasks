@@ -6,14 +6,14 @@
 ## 📋 阶段索引
 
 ### 第一阶段
-- [GitHub学习笔记](./GitHub学习笔记.md)
-- [README学习笔记](./README学习笔记.md)
--  [Markdown进阶笔记](./Markdown进阶笔记.md)
-- [README学习笔记](./README学习笔记.md)
-- [Markdown练习文档](./Markdown练习文档.md)
-- [问题解决记录](./问题解决记录.md)
+- [GitHub学习笔记](第一阶段/GitHub学习笔记.md)
+- [README学习笔记](第一阶段/README学习笔记.md)
+-  [Markdown进阶笔记](第一阶段/Markdown进阶笔记.md)
+- [README学习笔记](第一阶段/README学习笔记.md)
+- [Markdown练习文档](第一阶段/Markdown练习文档.md)
+- [问题解决记录](第一阶段/问题解决记录.md)
 ### 第二阶段
-- [Git学习笔记](./Git学习笔记.md)
-- [Git提交练习笔记（hello.md)](./Git提交练习笔记（hello.md))
+- [Git学习笔记](第二阶段/Git学习笔记.md)
+- [Git提交练习笔记（hello.md)](第二阶段/Git提交练习笔记（hello.md))
 
 

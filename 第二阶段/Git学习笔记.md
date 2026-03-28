@@ -169,10 +169,9 @@ git push origin 分支名
   -  VS Code 集成：在 VS Code 中打开项目，左侧源代码管理面板可以直接 add、commit、push，还能暂存部分修改。
   -  Git 别名：配置命令缩写，
     例如：
-    ```bash
-    git config --global alias.st status
-    git config --global alias.ci commit
-    git config --global alias.pu push
     ```
-    之后可以用 git st 查看状态，git ci -m "msg" 快速提交。
-  
+    git config --global alias.st status
+
+    git config --global alias.ci commit
+    
+    git config --global alias.pu push

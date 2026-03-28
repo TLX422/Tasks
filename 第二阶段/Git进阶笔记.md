@@ -10,7 +10,7 @@ git config --global user.name "你的名字"
 git config --global user.email "你的邮箱"
 ```
 
-> 🤔 为什么？Git 会把你每次提交都贴上“谁做的”标签，方便团队追溯代码历史。这个配置全局生效，一次搞定。
+> 为什么？Git 会把你每次提交都贴上“谁做的”标签，方便团队追溯代码历史。这个配置全局生效，一次搞定。
 
 2. 生成 SSH 密钥（**推荐，免密码**）
 
@@ -20,14 +20,14 @@ ssh-keygen -t ed25519 -C "你的邮箱"
 
 将 ~/.ssh/id_ed25519.pub 内容粘贴到 GitHub → Settings → SSH and GPG keys。
 
->🤔 SSH 就像一把专属钥匙，GitHub 存着你的公钥，你本地存着私钥。这样每次 push 都不用输密码，安全又方便。
+> SSH 就像一把专属钥匙，GitHub 存着你的公钥，你本地存着私钥。这样每次 push 都不用输密码，安全又方便。
 
 3. 加入项目
 
 -  项目负责人：仓库 → Settings → Collaborators → Add collaborator（输入对方 GitHub 用户名）
 -  你：收到邮件/通知，接受邀请即可
 
->🤔 项目需要授权才能写代码。负责人把你加入 Collaborators 列表，你就有权限直接推送到仓库，不用走 Fork 流程。
+> 项目需要授权才能写代码。负责人把你加入 Collaborators 列表，你就有权限直接推送到仓库，不用走 Fork 流程。
 
 ---
 

@@ -175,3 +175,7 @@ git push origin 分支名
     git config --global alias.ci commit
     
     git config --global alias.pu push
+## 参考资料
+1.豆包
+
+2.[百度](https://blog.csdn.net/qq_45796592/article/details/128953729?ops_request_misc=elastic_search_misc&request_id=ce033302433e1e74838e78c50143b9b5&biz_id=0&utm_medium=distribute.pc_search_result.none-task-blog-2~all~top_positive~default-2-128953729-null-null.142^v102^pc_search_result_base7&utm_term=git&spm=1018.2226.3001.4187)

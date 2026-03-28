@@ -1,16 +1,8 @@
 
-# 📘 Git 学习笔记
+# 一、📘 Git 学习笔记
 
-> 记录 Git 的基本操作、常用命令以及协作流程。
+> 记录 Git 的基本操作、常用命令
 
----
-
-## 📑 目录
-1. [Git 是什么](#-git-是什么)
-2. [安装与配置](#-安装与配置)
-3. [基本操作流程](#-基本操作流程)
-4. [分支管理简介](#-分支管理简介)
-5. [远程协作](#-远程协作)
 
 ---
 
@@ -170,16 +162,17 @@ git push origin 分支名
   git reset --hard <commit-id>
   ```
 ---
-### 出现冲突怎么办？
-
-- 1. 执行 git pull 时提示冲突
-- 2. 打开冲突文件，找到 <<<<<<< 标记
-- 3. 手动保留需要的代码，删除冲突标记
-- 4. 保存文件，执行：
-   ```bash
-   git add .
-   git commit -m "解决冲突"
-   git push
-   ```
-
-```
+# 二、更高效的提交方式
+>Git Bash 是命令行方式，对新手可能显得繁琐，但熟练后非常高效，尤其适合批量操作、脚本化。
+## 更高效的方式：
+  - 图形化工具：GitHub Desktop、SourceTree、VS Code 内置的 Git 插件等，可以直观地看到文件变更、提交历史，一键提交推送。
+  -  VS Code 集成：在 VS Code 中打开项目，左侧源代码管理面板可以直接 add、commit、push，还能暂存部分修改。
+  -  Git 别名：配置命令缩写，
+    例如：
+    ```bash
+    git config --global alias.st status
+    git config --global alias.ci commit
+    git config --global alias.pu push
+    ```
+    之后可以用 git st 查看状态，git ci -m "msg" 快速提交。
+  

@@ -1,11 +1,16 @@
 # 🚀 JavaScript 学习笔记
-
+---
 ## 1️⃣ 什么是 JavaScript？
+
+<img width="717" height="287" alt="屏幕截图 2026-04-07 230717" src="https://github.com/user-attachments/assets/d197741c-722e-4134-a2d4-2a254b922599" />
 
 - JavaScript（简称 JS）是一种轻量级的解释型或即时编译型脚本语言
 - 运行在浏览器中，为网页添加交互行为（动态效果、数据请求、用户响应等）
 - 也可在服务端运行（如 Node.js）
 - 遵循 ECMAScript 标准（ES6、ES7 等是版本迭代）
+
+>**实例**
+<img width="1681" height="613" alt="屏幕截图 2026-04-07 230746" src="https://github.com/user-attachments/assets/cecacb4e-22f8-4f7f-b248-819aa62ccb70" />
 
 ---
 

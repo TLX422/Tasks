@@ -1,13 +1,17 @@
 # 📘 HTML 学习笔记
 
 ## 1️⃣ 什么是 HTML？
+
 - **HTML** 是超文本标记语言（HyperText Markup Language）
 - 用于描述网页的结构和内容
 - 文件后缀通常为 `.html` 或 `.htm`
-
+<img width="652" height="429" alt="屏幕截图 2026-04-07 225622" src="https://github.com/user-attachments/assets/f5f90744-4b18-4ca0-a57c-95c57a4bce49" />
 ---
 
 ## 2️⃣ 最基本的 HTML 文档结构
+>来自[菜鸟教程][https://www.runoob.com/html/html-intro.html]
+<img width="1329" height="649" alt="屏幕截图 2026-04-07 225111" src="https://github.com/user-attachments/assets/0e61e46c-fa70-411d-9e42-e6135182f69f" />
+
 
 ```html
 <!DOCTYPE html>
@@ -23,13 +27,15 @@
 </html>
 ```
 
-结构说明
+>结构说明
+<img width="1223" height="717" alt="屏幕截图 2026-04-07 225432" src="https://github.com/user-attachments/assets/b07cf559-9d0d-4cfb-b142-58188925e2c2" />
 ```
 · <!DOCTYPE html> ：声明文档类型为 HTML5
 · <html> ：根标签
 · <head> ：存放元数据（标题、字符集、样式等）
 · <body> ：页面可见内容
 ```
+
 ---
 
 3️⃣ 常用标签速查

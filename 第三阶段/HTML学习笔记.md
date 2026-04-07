@@ -138,6 +138,8 @@
 ```html
 <!-- 这是注释，不会显示在页面上 -->
 ```
+***学习笔记手写**
+![HTML笔记](https://github.com/user-attachments/assets/099ba1c9-07bc-4587-ae95-2325facaab77)
 
 ---
 

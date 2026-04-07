@@ -3,7 +3,16 @@
 ## 1️⃣ 什么是 CSS？
 - **CSS**（Cascading Style Sheets，层叠样式表）用于控制网页的**外观与布局**
 - 可以独立于 HTML 文件，实现**内容与表现分离**
-- 文件后缀为 `.css`
+
+---
+
+
+<img width="1301" height="297" alt="屏幕截图 2026-04-07 225903" src="https://github.com/user-attachments/assets/047a3ba3-c3a6-4ad8-b21e-773f556f798b" />
+
+---
+**CSS实例**
+<img width="1275" height="557" alt="屏幕截图 2026-04-07 225915" src="https://github.com/user-attachments/assets/952d41cf-7758-4c2b-9483-0c344223d123" />   
+
 
 ## 2️⃣  CSS 的三种使用方式
 
@@ -15,7 +24,7 @@
 
 ---
 
-## 3️⃣ CSS 基础语法
+## 3️⃣CSS 基础语法
 
 ```css
 选择器 {

@@ -14,8 +14,6 @@
 
 ### 3. 视口标签（响应式生效的前提）
 所有响应式页面**必须写在 head 内**
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-```
 作用：
 - 网页宽度 = 设备屏幕宽度
 - 禁止手机默认缩放

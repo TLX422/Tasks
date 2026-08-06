@@ -1,1 +1,405 @@
+# JavaScript 笔记
+---
+
+# 一、JavaScript 函数系统（核心重点 ⭐）
+## 1. 自定义函数
+函数是**封装一段可重复执行的代码块**，提高代码复用、减少冗余。
+
+### 两种定义方式
+```js
+// 1. 函数声明（有提升）
+function fn(a, b) {
+  return a + b;
+}
+
+// 2. 函数表达式（无提升）
+let fn2 = function(a, b) {
+  return a + b;
+};
+```
+
+### 函数组成
+- 函数名
+- 参数（形参、实参）
+- 函数体
+- return 返回值
+
+---
+
+## 2. 函数四种调用方式（必考）
+### ✅ 1. 全局调用 / 普通调用 ⭐最常用
+```js
+fn();
+```
+- `this` 指向 **window**（浏览器）
+- 无对象绑定，纯粹执行函数
+
+### ✅ 2. 对象方法调用
+```js
+let obj = {
+  name: "张三",
+  say: function () {
+    console.log(this.name);
+  }
+};
+obj.say();
+```
+- `this` 指向 **调用它的对象 obj**
+
+### ✅ 3. 构造函数调用 new
+```js
+function Person(name) {
+  this.name = name;
+}
+let p = new Person("李四");
+```
+new 做了四件事：
+1. 创建空对象
+2. this 指向该空对象
+3. 执行代码赋值
+4. 默认返回实例对象
+
+- `this` 指向 **new 出来的实例**
+
+### ✅ 4. 函数方法调用：call / apply ⭐重点
+**作用：强行改变函数内部 this 指向**
+
+#### call 语法
+```js
+函数.call(新this指向, 参数1, 参数2)
+```
+特点：参数**逐个传递**
+
+#### apply 语法
+```js
+函数.apply(新this指向, [参数数组])
+```
+特点：参数**必须数组传递**
+
+#### 代码示例
+```js
+function fn(a, b) {
+  console.log(this, a, b);
+}
+let obj = { name: "测试" };
+
+fn.call(obj, 10, 20);
+fn.apply(obj, [10, 20]);
+```
+
+#### call / apply 区别
+- call：零散参数
+- apply：数组参数
+
+---
+
+# 二、作用域 &amp; 作用域链 ⭐必考难点
+## 1. 作用域
+**变量的可访问范围**，JS分为两种：
+
+### 全局作用域
+- 整个页面都能访问
+- 页面关闭才销毁
+
+### 局部作用域（函数作用域）
+- 函数内部生效
+- 函数执行完毕，变量销毁
+
+## 2. 作用域链
+**内层可以访问外层变量，外层不能访问内层变量**
+
+变量查找规则：
+1. **先在当前作用域找**
+2. 找不到 → 向外层父作用域找
+3. 一直找到全局作用域
+4. 找不到 → 报错 `is not defined`
+
+> 作用域链本质：**层层嵌套的变量查找机制**
+
+---
+
+# 三、闭包 ⭐面试超级重点
+## 1. 闭包定义
+**内层函数访问外层函数的变量，并且内层函数被外部使用，形成闭包**
+
+## 2. 闭包形成三个条件
+1. 函数嵌套
+2. 内层引用外层变量
+3. 内层函数被外部调用
+
+## 3. 闭包特点
+- 让**局部变量常驻内存，不会销毁**
+- 可以实现**私有变量**，外部无法直接修改
+
+## 4. 闭包优点
+- 延长变量生命周期
+- 保护变量私有化
+
+## 5. 闭包缺点
+- **容易内存泄漏**，占用内存不释放
+
+## 6. 闭包经典案例
+```js
+function outer() {
+  let num = 10;
+  return function inner() {
+    console.log(num);
+  };
+}
+let res = outer();
+res(); 
+```
+
+---
+
+# 四、正则表达式 RegExp
+## 1. 作用
+匹配、校验、替换、截取字符串（手机号、账号、密码、邮箱）
+
+## 2. 创建方式
+```js
+// 字面量
+let reg = /\d+/;
+
+// 构造函数
+let reg2 = new RegExp("\\d+");
+```
+
+## 3. 常用元字符
+- `\d` 数字
+- `\D` 非数字
+- `\w` 字母数字下划线
+- `\s` 空格
+- `^` 开头
+- `$` 结尾
+- `+` 至少1次
+- `*` 任意次数
+- `?` 0或1次
+
+## 4. 常用方法
+```js
+reg.test("内容") // 校验返回布尔值
+str.match(reg)   // 匹配内容
+str.replace(reg,"") // 替换
+```
+
+---
+
+# 五、JS 错误处理机制
+防止代码报错卡死整个页面
+
+```js
+try {
+  // 可能出错的代码
+} catch (err) {
+  // 捕获错误信息
+  console.log(err);
+} finally {
+  // 无论对错一定执行
+}
+```
+
+---
+
+# 六、JS 事件
+## 1. 事件三要素
+1. 事件源（谁触发）
+2. 事件类型（什么动作）
+3. 事件处理函数（触发后做什么）
+
+## 2. 常用事件
+- 鼠标：`click`、`mouseenter`、`mouseleave`
+- 键盘：`keydown`、`keyup`
+- 表单：`input`、`change`、`submit`
+- 页面：`scroll`、`resize`、`load`
+
+## 3. 事件绑定
+```js
+dom.addEventListener("click", function(){})
+```
+
+---
+
+# 七、严格模式 use strict
+## 开启方式
+```js
+"use strict";
+```
+
+## 严格模式作用
+1. **变量必须声明才能使用**（杜绝全局变量污染）
+2. 禁止函数 this 指向 window
+3. 禁止重复参数
+4. 禁止不合理语法
+
+---
+
+# 八、JSON 数据格式
+## 特点
+- 键名**必须双引号**
+- 不能存函数、undefined
+
+## 两个核心转换
+```js
+// JS对象 → JSON字符串（传给后端）
+JSON.stringify(obj)
+
+// JSON字符串 → JS对象（后端数据渲染）
+JSON.parse(jsonStr)
+```
+
+---
+
+# 九、⭐ DOM API 文档对象模型
+## 1. 作用
+操作网页：**增、删、改、查**页面元素
+
+## 2. 获取元素
+```js
+document.getElementById("id")
+document.getElementsByClassName("box")
+document.querySelector(".box") // 推荐！
+document.querySelectorAll(".box")
+```
+
+## 3. 常用操作
+- 内容：`innerText`、`innerHTML`
+- 属性：`src`、`href`、`value`
+- 样式：`style.xxx`
+- 节点：`createElement`、`appendChild`、`removeChild`
+
+## 4. 节点操作流程
+创建 → 设置属性 → 追加页面
+
+---
+
+# 十、性能优化：防抖 &amp; 节流 ⭐面试必考
+## 1. 防抖 Debounce
+**停止触发后，延迟一段时间执行一次**
+
+适用场景：
+- 搜索框输入联想
+- 窗口缩放
+- 输入框监听
+
+核心：**多次触发，只执行最后一次**
+
+## 2. 节流 Throttle
+**固定时间内只执行一次**
+
+适用场景：
+- 页面滚动
+- 高频点击
+- 拖拽移动
+
+核心：**频繁触发，匀速执行**
+
+### 记忆口诀
+**防抖停了才执行，节流一直匀速跑**
+
+---
+
+# 十一、Ajax 异步请求
+## 作用
+**局部刷新**，不刷新页面请求后端数据
+
+## 原生 Ajax 四步
+1. 创建 XMLHttpRequest 对象
+2. open(请求方式, 地址)
+3. send() 发送请求
+4. onreadystatechange 监听返回
+
+```js
+let xhr = new XMLHttpRequest();
+xhr.open("GET","接口地址");
+xhr.send();
+xhr.onreadystatechange = function(){
+  if(xhr.readyState === 4 && xhr.status === 200){
+    console.log(xhr.responseText);
+  }
+}
+```
+
+---
+
+# 十二、ES6 核心语法
+## 1. let / const
+- `let`：块级作用域、可修改、不允许变量提升
+- `const`：常量、不可修改、必须初始化
+
+解决 var 的问题：
+- 变量提升
+- 没有块级作用域
+- 可以重复声明
+
+## 2. 箭头函数
+```js
+let fn = (a,b) =&gt; a+b;
+```
+特点：
+- 没有自己 this
+- 不能 new
+- 没有 arguments
+
+---
+
+# 十三、⭐ 异步编程：Promise + async / await
+## 1. Promise
+解决**回调地狱**，让异步代码扁平化
+
+三种状态：
+1. pending 等待
+2. fulfilled 成功
+3. rejected 失败
+
+```js
+new Promise((resolve,reject)=&gt;{
+  // 异步操作
+  resolve("成功数据");
+}).then(res=&gt;{
+  console.log(res);
+})
+```
+
+## 2. async / await ⭐终极异步方案
+**Promise 语法糖，异步代码同步写法**
+
+```js
+async function getData(){
+  let res = await 异步请求;
+  console.log(res);
+}
+```
+- async 修饰函数
+- await 等待 Promise 结束
+
+---
+
+# 十四、Web 端 JS 调试技巧
+1. `console.log()` 打印输出
+2. 浏览器 Sources 断点调试
+3. `debugger;` 强制暂停代码
+4. 控制台查看作用域、this、变量变化
+
+---
+
+# 十五、前端 JS 性能优化
+1. 防抖节流减少高频事件执行
+2. 缓存 DOM 节点，避免频繁获取元素
+3. 避免滥用闭包，防止内存泄漏
+4. 减少全局变量，避免全局污染
+5. 大量操作 DOM 使用文档碎片
+6. 合理使用异步，避免阻塞主线程
+
+---
+
+# 十六、整体知识体系总结
+函数四种调用 → this指向 → call/apply  
+作用域 → 作用域链 → 闭包  
+正则 → 错误处理 → 事件机制  
+严格模式 → JSON数据交互  
+DOM页面操作 → 防抖节流性能优化  
+Ajax异步请求 → ES6语法  
+Promise/async-await 异步终极方案  
+Web调试 + 前端性能优化
 

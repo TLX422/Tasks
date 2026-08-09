@@ -273,7 +273,7 @@ document.querySelectorAll(".box")
 
 ---
 
-# 十、性能优化：防抖 &amp; 节流 ⭐面试必考
+# 十、性能优化：防抖 &amp; 节流 ⭐
 ## 1. 防抖 Debounce
 **停止触发后，延迟一段时间执行一次**
 

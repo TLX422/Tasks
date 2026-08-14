@@ -91,7 +91,7 @@ Flex 全称 Flexible Box，**弹性盒子布局**。
 - **移动端响应式首选布局**
 
 ## 2. 开启 Flex 布局
-
+![](https://i-blog.csdnimg.cn/blog_migrate/69bfc61e4b7b55c1b805f561f324829b.png#pic_center)
 1. **弹性容器（父盒子）**：设置 `display: flex` 的元素
 2. **弹性项目（子元素）**：容器里面直接子元素
 3. **主轴**：默认水平方向（从左 → 右）
@@ -114,9 +114,11 @@ Flex 全称 Flexible Box，**弹性盒子布局**。
 ```
 设置后：**子元素自动横向排列**
 
-## 3. 父容器六大核心属性（逐字背诵）
+## 3. 父容器六大核心属性
+>例子
+<img width="830" height="616" alt="屏幕截图 2026-08-14 211246" src="https://github.com/user-attachments/assets/c3f38d10-8cf0-428f-b4cf-44809fafc6bc" />
 
-### ① flex-direction 主轴方向
+### ① flex-direction 主轴方向（定方向）
 ```css
 flex-direction: row;        /* 默认：水平从左到右 */
 flex-direction: column;     /* 垂直从上到下 */
@@ -130,7 +132,7 @@ flex-wrap: nowrap; /* 默认：不换行，挤压子元素 */
 flex-wrap: wrap;   /* 自动换行 —— 响应式必须加！ */
 ```
 
-### ③ justify-content 水平对齐方式
+### ③ justify-content 水平对齐方式（垂直方向上）
 ```css
 justify-content: center;        /* 居中 */
 justify-content: flex-start;    /* 靠左 */
@@ -139,7 +141,7 @@ justify-content: space-between;/* 两端对齐，中间均分 */
 justify-content: space-around;  /* 两边留有空隙 */
 ```
 
-### ④ align-items 垂直对齐方式
+### ④ align-items 水平对齐方式
 ```css
 align-items: center;      /* 垂直居中 */
 align-items: flex-start;  /* 顶部对齐 */
@@ -147,6 +149,8 @@ align-items: flex-end;    /* 底部对齐 */
 ```
 
 ✅ **水平 + 垂直居中万能组合**
+
+<img width="838" height="848" alt="屏幕截图 2026-08-14 211909" src="https://github.com/user-attachments/assets/f09671a8-10df-4b72-a0fd-0dc15dd69d4f" />
 
 ```
 .father{
@@ -193,11 +197,13 @@ gap: 20px; /* 上下左右统一间距 */
 ```
 
 ## 4. 子元素常用属性
-### 1. `flex-grow` 弹性放大比例
+### 1. `flex-grow/flex` 弹性放大比例
+
+<img width="810" height="331" alt="屏幕截图 2026-08-14 212715" src="https://github.com/user-attachments/assets/6e302cf1-a676-42c5-b099-470c41cb6e97" />
 
 默认值 `0`：有剩余空间，也不放大
 数字代表**分配剩余空间的比例**
-
+**设置的宽度不再起效**
 ```
 .item{
   flex-grow: 1; /*所有子元素均分剩余宽度*/

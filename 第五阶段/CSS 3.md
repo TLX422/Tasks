@@ -1,5 +1,4 @@
 # CSS 笔记
-
 ---
 ## 一、响应式布局完整基础知识
 ### 1. 什么是响应式布局
@@ -42,6 +41,9 @@ img {
 ### 6. 媒体查询标准断点（给网页设置if判断条件，满足才执行）
 
 >[菜鸟教程媒体查询](https://www.runoob.com/css/css-rwd-mediaqueries.html)
+
+<img width="678" height="410" alt="屏幕截图 2026-08-14 214143" src="https://github.com/user-attachments/assets/35bbd50b-bc70-485d-873f-e4be71af66e1" />
+
 ```
 @media screen and (max-width: 768px) {
   /* 满足条件才执行的样式 */
@@ -53,7 +55,9 @@ img {
 4. `(max-width:768px)`：条件
    - `max-width:768px`：屏幕宽度 **小于等于 768px**
    - `min-width:768px`：屏幕宽度 **大于等于 768px**
-> 
+>手机屏幕上显示
+<img width="944" height="857" alt="屏幕截图 2026-08-14 215107" src="https://github.com/user-attachments/assets/9df1802e-ea99-4536-b8c7-70deb7b460fe" />
+
 > 行业通用尺寸断点
 > ✅ 手机：0 ~ 768px
 > ✅ 平板：768px ~ 1200px

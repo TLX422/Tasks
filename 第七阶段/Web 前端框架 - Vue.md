@@ -78,7 +78,7 @@ npm run dev
 - `<style scoped>`：样式仅作用于当前组件，防止全局样式污染
 
 ## 五、创建Vue项目并启动网页
-
+>[菜鸟教程：Vue创建项目](https://www.runoob.com/vue3/vue3-create-project.html)
 1. 使用npm命令初始化Vue项目
 2. 安装依赖包 `npm install`
 3. 命令行执行 `npm run dev` 启动本地服务

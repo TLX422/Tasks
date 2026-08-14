@@ -7,6 +7,9 @@
 
 ### 1. ⭐自定义函数（函数声明）
 
+<img width="451" height="501" alt="屏幕截图 2026-08-14 234130" src="https://github.com/user-attachments/assets/c5436ac1-dfea-4b64-8b6f-515c03914abe" />
+
+>return后面不能再添加任何代码，不能执行
 ```
 // 语法
 function 函数名(参数列表) {
@@ -21,6 +24,7 @@ function sayHello(name) {
 //调用
 sayHello("小明");
 ```
+<img width="477" height="464" alt="屏幕截图 2026-08-14 232908" src="https://github.com/user-attachments/assets/3a18ade3-b161-4aed-827a-03360e7d0c47" />
 
 ✅ 特点：**函数提升**，可以先调用，后定义。
 

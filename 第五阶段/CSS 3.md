@@ -336,6 +336,7 @@ Grid 同时控制 **行 + 列（二维布局）**，适合相册、后台页面�
 
 ## 二、父容器属性（写在父元素）
 
+
 ### 1. grid-template-columns 定义列宽
 
 ### 2. grid-template-rows 定义行高
@@ -348,6 +349,7 @@ grid-template-rows: 80px 120px;
 ```
 
 #### 🔥高频函数 repeat () 重复定义
+<img width="1029" height="482" alt="屏幕截图 2026-08-14 224942" src="https://github.com/user-attachments/assets/7de7780a-2ceb-4ec1-a861-dc2043501630" />
 
 ```
 /* 创建4列，每一列宽度1fr */
@@ -373,6 +375,9 @@ grid-template-columns: 1fr 2fr;
 gap: 10px;                /* 行间距、列间距都是10px */
 gap: 10px 20px;           /* 行间距 10px，列间距20px */
 
+<img width="1335" height="861" alt="屏幕截图 2026-08-14 225919" src="https://github.com/user-attachments/assets/10f69f5d-d3eb-4f5b-8e39-1aade0eafa71" />
+
+---
 /* 拆分写法 */
 row-gap: 10px;    /* 行间距 */
 column-gap:20px;  /* 列间距 */
@@ -461,6 +466,12 @@ place-content: center center;
 
 ### 1. grid-column 控制单元格横跨列
 
+<img width="1902" height="852" alt="屏幕截图 2026-08-14 230358" src="https://github.com/user-attachments/assets/0a67fa09-3437-4d5c-8fb2-f33c2c55c019" />
+
+---
+<img width="579" height="543" alt="屏幕截图 2026-08-14 230748" src="https://github.com/user-attachments/assets/3f797d6a-7be0-4e38-b171-db917e13c174" />
+
+>跨两列，2和3和合并，把2再类名加上one，把3注释掉
 ```
 /* 从第1根列线，跨越2格 */
 grid-column: 1 / span 2;
@@ -478,6 +489,13 @@ grid-column-end:3;
 ```
 grid-row: 1 / span 2;
 ```
+
+# 跨两行两列
+
+<img width="625" height="454" alt="屏幕截图 2026-08-14 231248" src="https://github.com/user-attachments/assets/fe201b84-9b1c-4b0f-9e9f-6bf62477a546" />
+
+<img width="1914" height="819" alt="屏幕截图 2026-08-14 231340" src="https://github.com/user-attachments/assets/72365148-85fc-4d59-a6c4-2ad4ed1f7652" />
+
 
 ### 3. align-self 单独控制单个元素垂直对齐
 

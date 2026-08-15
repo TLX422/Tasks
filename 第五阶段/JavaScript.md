@@ -790,6 +790,24 @@ btn.addEventListener('click',()=>console.log(2))
 ><img width="556" height="268" alt="屏幕截图 2026-08-16 004718" src="https://github.com/user-attachments/assets/54e3ddae-4862-4ae4-959d-cd11f8a9782f" />
 
 回调函数里面可以接收 `event`（事件对象），保存这次事件全部信息。
+### 关于target：可以获取事件节点
+>
+><img width="548" height="269" alt="屏幕截图 2026-08-16 005405" src="https://github.com/user-attachments/assets/a61d68f5-fdd6-4f7a-b5bb-e47da79d6c6b" />
+
+
+><img width="668" height="133" alt="屏幕截图 2026-08-16 005419" src="https://github.com/user-attachments/assets/cda7d39b-eb3a-47ea-9250-2d23632f3e82" />
+---
+>可以利用target修改文本用innerHTML
+>
+><img width="533" height="175" alt="屏幕截图 2026-08-16 005648" src="https://github.com/user-attachments/assets/4df8312d-3a62-44dd-8af1-4f0e378f473a" />
+
+### 关于type：可以获取事件类型
+>
+><img width="518" height="255" alt="屏幕截图 2026-08-16 005841" src="https://github.com/user-attachments/assets/92fc0845-db86-4529-a668-3021161a55a4" />
+
+>
+><img width="616" height="186" alt="屏幕截图 2026-08-16 005859" src="https://github.com/user-attachments/assets/c3f54794-7e11-4f93-ac47-b719984253fe" />
+
 
 ```
 btn.addEventListener('click',function(e){

@@ -1,5 +1,9 @@
 # Flex 弹性布局
+>成功通关游戏
+>
+><img width="1806" height="813" alt="屏幕截图 2026-08-16 194032" src="https://github.com/user-attachments/assets/736da1c1-37a9-4911-9c41-f20fc2d053ac" />
 
+>
 >[菜鸟教程FLexb布局](https://www.runoob.com/w3cnote/flex-grammar.html)
 ## 1. Flex布局介绍
 Flex 全称 Flexible Box，**弹性盒子布局**。
@@ -138,7 +142,7 @@ gap: 20px; /* 上下左右统一间距 */
 
 设置子元素基础宽度，优先级高于 width。
 
-### 4. `flex` 简写（高频考点）
+### 4. `flex` 简写
 
 ```
 flex: 数值;

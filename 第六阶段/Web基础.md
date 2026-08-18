@@ -51,8 +51,11 @@ DNS相当于互联网的**电话簿**。
 ### 1. DOM事件流
 
 >[CSDN:DOM是什么](https://blog.csdn.net/wei1273356078/article/details/106543967)
+>
 **DOM树形结构**
+
 ![](https://www.runoob.com/images/htmltree.gif)
+
 ![](https://i-blog.csdnimg.cn/blog_migrate/f4f8204f0bf34035c59762c7f9edf1e7.png#pic_center)
 
 

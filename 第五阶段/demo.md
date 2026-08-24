@@ -1,4 +1,17 @@
 # 网页地址：
+---
+>
+## css练习
+
+>
+><img width="374" height="274" alt="image" src="https://github.com/user-attachments/assets/58b7b921-b795-47d6-ac17-a30b171c09c6" />
+
+## js练习
+
+>
+><img width="271" height="643" alt="屏幕截图 2026-08-24 182102" src="https://github.com/user-attachments/assets/aed06390-aff6-4fe7-b2f5-77ebce40f458" />
+
+---
 👉 [媒体查询](https://tlx422.github.io/mtcx/)
 
 👉 [Flex弹性盒子](https://tlx422.github.io/flex/)

@@ -14,6 +14,10 @@ for(var i = 0; i<3; i++){}
 console.log(i) //3，循环结束i泄露到外部
 ```
 
+>
+><img width="638" height="100" alt="屏幕截图 2026-08-24 183053" src="https://github.com/user-attachments/assets/59bff4fb-9ce1-43ad-8460-c64ed49f1c4b" />
+
+
 ### let
 1. **块级作用域**：`{ }`内部生效（if、for、while大括号）
 2. **不能重复声明**同一个变量，直接报错
@@ -86,6 +90,10 @@ Promise专门用来处理异步，把嵌套回调改成链式调用。
 > 状态只能从pending → fulfilled 或者 pending → rejected；**状态改变之后就固定，不能再次修改**。
 
 ### 3.基础语法
+>
+><img width="666" height="192" alt="屏幕截图 2026-08-24 184005" src="https://github.com/user-attachments/assets/274ec562-146c-4394-a1ec-2232128254b4" />
+
+
 ```js
 const p = new Promise((resolve, reject)=>{
   // resolve：函数，把promise变成成功状态，传递成功结果
